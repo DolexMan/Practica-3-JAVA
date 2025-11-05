@@ -1,31 +1,43 @@
-import java.util.ArrayList;
+//import java.util.ArrayList;
+import java.util.List;
 public class Lugar extends EntidadTuristica{
 
-    ArrayList<String> intereses;
-    ArrayList<String> diasAbierto;
+    //ArrayList<String> intereses;
+    //ArrayList<String> diasAbierto;
+    List<String> intereses;
+    List<String> diasA;
+    List<String> conexiones;
 
-    public Lugar(String nombre, String descripcion, ArrayList<String> intereses, ArrayList<String> diasAbierto, String ubicacion, double precioEntrada) {
+    public Lugar(String nombre, List<String> intereses, List<String> diasA, List<String> conexiones) {
         this.nombre = nombre;
-        this.descripcion = descripcion;
         this.intereses = intereses;
-        this.diasAbierto = diasAbierto;
-    } 
+        this.diasA = diasA;
+        this.conexiones = conexiones;
+    }
+
+    public void mostrarInfo() {
+        System.out.println("Ciudad: " + nombre);
+        System.out.println("Puntos de interés: " + intereses);
+        System.out.println("Días abiertos: " + diasA);
+        System.out.println("Conexiones directas: " + conexiones);
+        System.out.println("-----------------------------");
+    }
 
     // Setters and Getters
     public String getNombre() {
         return nombre;
     }
 
-    public String getDescripcion() {
-        return descripcion;
+    public List<String> getconexiones() {
+        return conexiones;
     }
 
-    public ArrayList<String> getIntereses() {
+    public List<String> getIntereses() {
         return intereses;
     }
 
-    public ArrayList<String> getDiasAbierto() {
-        return diasAbierto;
+    public List<String> getDiasAbierto() {
+        return diasA;
     }
     
 }

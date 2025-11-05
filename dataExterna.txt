@@ -1,0 +1,10 @@
+[Lugar]
+nombre: Barcelona
+intereses: comida, romantico, museos
+dias_abierto: lunes, martes, miercoles, jueves
+conexiones: madrid
+[Lugar]
+nombre: Madrid
+intereses: parques, arquitectura, noche
+dias_abierto: lunes, martes, domingo, jueves
+conexiones: paris, barcelona, monaco
