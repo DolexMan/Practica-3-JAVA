@@ -57,7 +57,20 @@ public class GestorArchivos {
 
         return new Lugar(nombre, intereses, diasA, conexionesD, tiempo_viaje);
     }
+
+    public static List<String> listaInteresesTotales(List<Lugar> lugares) {
+
+        Set<String> set = new LinkedHashSet<>();
+        if (lugares == null) return new ArrayList<>(set);
+        for (Lugar l : lugares) {
+            List<String> intereses = l.getIntereses();
+            if (intereses == null) continue;
+            for (String it : intereses) {
+                if (it == null) continue;
+                String norm = it.trim().toLowerCase();
+                if (!norm.isEmpty()) set.add(norm);
+            }
+        }
+        return new ArrayList<>(set);
+    }
 }
-
-
-
