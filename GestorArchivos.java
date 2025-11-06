@@ -46,14 +46,16 @@ public class GestorArchivos {
 
         List<String> intereses = Arrays.asList(datos.getOrDefault("intereses", "").split(","));
         List<String> diasA = Arrays.asList(datos.getOrDefault("dias_abierto", "").split(","));
-        List<String> conexiones = Arrays.asList(datos.getOrDefault("conexiones", "").split(","));
+        List<String> conexionesD = Arrays.asList(datos.getOrDefault("conexiones", "").split(","));
+        List<String> tiempo_viaje = Arrays.asList(datos.getOrDefault("tiempo_viaje", "").split(","));
 
         // Quitar espacios extra
         intereses.replaceAll(String::trim);
         diasA.replaceAll(String::trim);
-        conexiones.replaceAll(String::trim);
+        conexionesD.replaceAll(String::trim);
+        tiempo_viaje.replaceAll(String::trim);
 
-        return new Lugar(nombre, intereses, diasA, conexiones);
+        return new Lugar(nombre, intereses, diasA, conexionesD, tiempo_viaje);
     }
 }
 
