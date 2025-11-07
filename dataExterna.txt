@@ -1,12 +1,48 @@
 [Lugar]
-nombre: Colombia
-intereses: comida, romantico, museos
-dias_abierto: lunes, martes, miercoles, jueves
-conexiones: madrid
+nombre: Barcelona
+intereses: comida, arquitectura, museos, lujoso
+dias_abierto: lunes, miercoles, jueves, sabado
+conexiones: Madrid
 tiempo_viaje: 2
+
 [Lugar]
 nombre: Madrid
-intereses: parques, arquitectura, noche
-dias_abierto: lunes, martes, domingo, jueves
-conexiones: paris, barcelona, monaco
+intereses: extremo, arquitectura, noche, comida
+dias_abierto: lunes, martes, jueves, miercoles
+conexiones: Paris, Barcelona, Monaco
 tiempo_viaje: 1
+
+[Lugar]
+nombre: Paris
+intereses: romantico, arquitectura, noche, 
+dias_abierto: lunes, domingo, jueves, sabado
+conexiones: Madrid, Ibiza
+tiempo_viaje: 2
+
+[Lugar]
+nombre: Ibiza
+intereses: parques, fiesta, noche, extremo
+dias_abierto: domingo, miercoles, jueves, viernes
+conexiones: Paris, Monaco
+tiempo_viaje: 3
+
+[Lugar]
+nombre: Roma
+intereses: cultura, arquitectura, comida, historia
+dias_abierto: martes, sabado, jueves, domingo
+conexiones: Berlin
+tiempo_viaje: 2
+
+[Lugar]
+nombre: Berlin
+intereses: parques, arquitectura, historia, moda
+dias_abierto: jueves, lunes, domingo, martes
+conexiones: Roma
+tiempo_viaje: 2
+
+[Lugar]
+nombre: Monaco
+intereses: romantico, noche, lujoso, cultura
+dias_abierto: martes, domingo, miercoles, lunes, sabado
+conexiones: Madrid, Ibiza
+tiempo_viaje: 3
